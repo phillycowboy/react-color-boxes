@@ -2,19 +2,19 @@ import React, { Component } from 'react'
 import {choice} from './helpers'
 
 class Box extends Component{
-    static defaultProps = {
-        allColors: ['purple', 'magenta', 'violet', 'pink']
-    }
+    // static defaultProps = {
+    //     allColors: ['purple', 'magenta', 'violet', 'pink']
+    // }
     constructor(props){
         super(props)
         this.state = {
-            color: choice(this.props.allColors)
+            color: choice(this.props.colors)
         }
     }
     pickColor = () => {
         let newColor;
         do {
-          newColor = choice(this.props.allColors)  
+          newColor = choice(this.props.colors)  
         } while (newColor === this.state.color)
         // never the same color twice 
         this.setState({ color: newColor})

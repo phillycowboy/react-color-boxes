@@ -1,11 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
-import Box from './Box'
+import BoxContainer from './BoxContainer';
+// import Box from './Box'
 
 function App() {
   return (
     <div className="App">
-      <Box />
+      <h1>Color Picker</h1>
+      <h4>Click on a Square!</h4>
+      <BoxContainer/>
     </div>
   );
 }

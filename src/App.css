@@ -1,5 +1,8 @@
 .App {
 	text-align: center;
+	/* padding-left: 2%;
+	padding-right: 2%; */
+	padding-bottom: 2em;
 }
 
 /* .App-logo {
@@ -40,4 +43,13 @@
 .Box {
 	height: 20em;
 	width: 20em;
+}
+
+.BoxContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	border-radius: 5px;
 }
